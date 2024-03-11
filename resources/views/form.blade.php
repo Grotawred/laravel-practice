@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-@csrf
-<form method="post" action="admin/add">
+<form method="post" action="/add">
+    @csrf
     <div class="form-group">
         <label for="inputName">Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+        <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter Name">
     </div>
     <div class="form-group">
-        <label for="inputDescription">Name</label>
-        <input type="text" class="form-control" id="inputDescription" placeholder="Enter Description">
+        <label for="inputDescription">Description</label>
+        <input type="text" class="form-control" id="inputDescription" name="description" placeholder="Enter Description">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

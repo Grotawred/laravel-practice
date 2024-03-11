@@ -21,12 +21,15 @@ Route::controller(TestController::class)->group(function () {
     Route::get('/sum', 'sum');
 });
 
+
+
+Route::post('/add', [TestController::class, 'addInfo']);
+
 Route::prefix('admin')->group(function (){
     Route::controller(TestController::class)->group(function (){
        Route::get('/user', 'user');
        Route::get('/users','users');
        Route::get('/info', 'showInfo');
-       Route::get('addInfo', 'showAddInfoPage');
-       Route::post('add', 'addInfo');
+       Route::get('/addInfo', 'showAddInfoPage');
     });
 });

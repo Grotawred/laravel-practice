@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/helloWorld/tests" />
         <option value="$PROJECT_DIR$/laravel-project/tests" />
         <option value="$PROJECT_DIR$/example-project/tests" />
+        <option value="$PROJECT_DIR$/tests" />
       </list>
     </option>
   </component>

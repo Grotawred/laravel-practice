@@ -33,6 +33,7 @@ class TestController extends Controller
     }
 
     public function addInfo(Request $request){
-        dd($request->all);
+        dd($request->get('name'), $request->get('description'));
     }
+
 }
